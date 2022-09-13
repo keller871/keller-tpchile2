@@ -1,0 +1,194 @@
+body{
+    /* imagen de fondo */
+    background-image: url(../assets/images/fondo-azul.jpg);
+    /* 100% o provar con cover */
+    background-size: 100%;
+}
+
+nav{
+    background-color: rgb(219, 6, 150);
+    border: solid 2px black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+h1{
+    font-family: 'Ultra', serif;
+    color: white;
+    text-shadow: 2px  0px 0px black,
+    0px  2px 0px black,
+   -2px  0px 0px black,
+    0px -2px 0px black;
+}
+
+.AcomodarBarraSuperior{
+    display: flex;
+    align-items: center;
+}
+
+.LogoSuperiorDerecho{
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 40%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.AcomodarOpcionesBarraSuperio{ 
+    margin: 30px;
+    padding: 30px;
+}
+
+.OpcionesBarraSuperior{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: x-large;
+}
+
+.OpcionesBarraSuperior__hijo{
+    margin: 10px 10px 0px 10px;
+    list-style-type: none;
+}
+
+.OpcionesBarraSuperior__hijo a{
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.TituloPrincipal{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration-line: underline;
+    margin: 10px 0px;
+}
+
+.Novedades{
+    background-color: rgba(234, 234, 246, 0.2);
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgba(19, 2, 66, 0.3);
+}
+
+.Novedades h3{
+    text-align: center;
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+.Novedades div{
+    margin-bottom: 20px;
+}
+
+p{
+    font-family: 'Alegreya', serif;
+    color: white;
+}
+
+.TituloBarraLateral{
+    text-align: center;
+}
+
+.BarraLateral{
+    background-color: rgba(234, 234, 246, 0.2);
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgba(19, 2, 66, 0.3);
+}
+
+.BotonesLaterales a{
+    display: grid;
+    text-decoration-line: none;
+}
+
+.BotonesLaterales button{
+    background-color: rgb(219, 6, 150);
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+}
+.LineaSeparadora{
+    border: solid rgb(234, 234, 246) 1px;
+    margin-top: 40px;
+}
+
+.gif-footer{
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 20%;
+    width: 20%;
+}
+
+.CuadroDeDescarga{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    align-items: center;
+    /* grid-column-gap: 1%;   */
+}
+
+.CuadroDeDescarga__Areas{
+    background-color: rgba(234, 234, 246, 0.2);
+    padding: 20px;
+    margin: 5px;
+    width: 75%;
+    height: 100%;
+    border: solid;
+    border-radius: 10px;
+    list-style-type: none;
+    justify-content: left;
+}
+
+.CuadroDeDescarga__Areas a{
+    color: white;
+}
+
+.CuadroDeDescarga__Areas h3{
+    font-family: 'Alegreya', serif;
+    text-shadow: 10px 10px 10px black;
+}
+
+/* --------------------------ANIMACIONES Y EFECTOS-------------------------- */
+.OpcionesBarraSuperior__hijo:hover{
+    text-shadow: 10px 10px 10px rgb(43, 1, 30);
+    font-weight: bold;
+}
+
+
+.LogoSuperiorDerecho:hover {
+    box-shadow: 10px 5px 5px rgb(43, 1, 30);
+    width: 105%;
+    height: 55%;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.BotonesLaterales button:hover{
+    background-color: rgb(97, 16, 72);
+    color: white;
+    font-weight: bold;
+}
+
+.CuadroDeDescarga__Animacion:hover{
+    background-image: linear-gradient(to top, rgb(185, 185, 185), rgb(40, 40, 40));
+    transform: translate(5px, 10px);
+    color: white;
+    box-shadow: -40px 10px 10px rgb(1, 34, 82);
+}
+
+/* --------------------------MEDIAS QUERYS-------------------------- */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .OpcionesBarraSuperior__hijo{
+        font-size: xx-small;
+    }
+
+    .AcomodarBarraSuperior{
+        align-items: flex-start;
+    }
+
+    .gif-footer{
+        display: none;
+    }
+}
