@@ -1,1 +1,1 @@
-web de uso interno de la empresa.
+Web diseñada para uso interno de la empresa.
