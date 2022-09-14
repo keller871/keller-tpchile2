@@ -10,6 +10,11 @@ nav{
     border: solid 2px black;
     border-radius: 10px;
     margin: 5px;
+    box-shadow: 10px 10px 5px rgba(19, 2, 66, 0.3);
+}
+
+.Pie{
+    background-color: rgb(219, 6, 150);
 }
 
 h1{
@@ -151,12 +156,20 @@ p{
     text-shadow: 10px 10px 10px black;
 }
 
+.Formulario{
+    display: grid;
+    justify-content: center;
+    background-color: rgba(234, 234, 246, 0.2);
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgba(19, 2, 66, 0.3);
+
+}
+
 /* --------------------------ANIMACIONES Y EFECTOS-------------------------- */
 .OpcionesBarraSuperior__hijo:hover{
     text-shadow: 10px 10px 10px rgb(43, 1, 30);
     font-weight: bold;
 }
-
 
 .LogoSuperiorDerecho:hover {
     box-shadow: 10px 5px 5px rgb(43, 1, 30);
@@ -178,7 +191,24 @@ p{
     box-shadow: -40px 10px 10px rgb(1, 34, 82);
 }
 
+.CuadroDeDescarga__Animacion a:hover{
+    text-shadow: 10px 10px 10px rgb(43, 1, 30);
+    font-weight: bold;
+    color: white;
+
+}
+
+
 /* --------------------------MEDIAS QUERYS-------------------------- */
+
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+    .OpcionesBarraSuperior__hijo{
+        font-size: small;
+    }
+
+
+}
+
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .OpcionesBarraSuperior__hijo{
         font-size: xx-small;
