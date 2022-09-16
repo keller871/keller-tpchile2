@@ -1,0 +1,61 @@
+.Novedades{
+    background-color: rgba(234, 234, 246, 0.2);
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgba(19, 2, 66, 0.3);
+}
+
+.Novedades h3{
+    text-align: center;
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+.Novedades div{
+    margin-bottom: 20px;
+}
+
+.TituloBarraLateral{
+    text-align: center;
+}
+
+.BarraLateral{
+    background-color: rgba(234, 234, 246, 0.2);
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgba(19, 2, 66, 0.3);
+}
+
+.BotonesLaterales a{
+    display: grid;
+    text-decoration-line: none;
+}
+
+.BotonesLaterales button{
+    background-color: rgb(219, 6, 150);
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+}
+
+.TituloPrincipal{
+    animation-duration: 20s;
+    animation-name: TituloPrincipalAnimacion;
+    animation-iteration-count: infinite;
+
+}
+
+.BotonesLaterales button:hover{
+    background-color: rgb(97, 16, 72);
+    color: white;
+    font-weight: bold;
+}
+
+@keyframes TituloPrincipalAnimacion {
+    from {
+      margin-left: -10%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: -100%;
+      width: 100%;
+    }
+  }

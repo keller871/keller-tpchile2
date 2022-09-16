@@ -1,0 +1,21 @@
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+    .OpcionesBarraSuperior__hijo{
+        font-size: small;
+    }
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .OpcionesBarraSuperior__hijo{
+        font-size: xx-small;
+    }
+
+    .AcomodarBarraSuperior{
+        align-items: flex-start;
+    }
+
+    .gif-footer{
+        display: none;
+    }
+}

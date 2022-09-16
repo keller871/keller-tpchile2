@@ -1,0 +1,22 @@
+{
+  "name": "tp-chile-ver-2",
+  "version": "1.0.0",
+  "description": "pagina para tp chile",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style-salida.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keller871/keller-tpchile2.git"
+  },
+  "author": "Facundo Keller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keller871/keller-tpchile2/issues"
+  },
+  "homepage": "https://github.com/keller871/keller-tpchile2#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

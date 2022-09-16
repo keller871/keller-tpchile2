@@ -1,0 +1,42 @@
+.CuadroDeDescarga{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    align-items: center;
+    /* grid-column-gap: 1%;   */
+}
+
+.CuadroDeDescarga__Areas{
+    background-color: rgba(234, 234, 246, 0.2);
+    padding: 20px;
+    margin: 5px;
+    width: 75%;
+    height: 100%;
+    border: solid;
+    border-radius: 10px;
+    list-style-type: none;
+    justify-content: left;
+}
+
+.CuadroDeDescarga__Areas a{
+    color: white;
+}
+
+.CuadroDeDescarga__Areas h3{
+    font-family: 'Alegreya', serif;
+    text-shadow: 10px 10px 10px black;
+}
+
+// animaciones
+.CuadroDeDescarga__Animacion:hover{
+    background-image: linear-gradient(to top, rgb(185, 185, 185), rgb(40, 40, 40));
+    transform: translate(5px, 10px);
+    color: white;
+    box-shadow: -40px 10px 10px rgb(1, 34, 82);
+}
+
+.CuadroDeDescarga__Animacion a:hover{
+    text-shadow: 10px 10px 10px rgb(43, 1, 30);
+    font-weight: bold;
+    color: white;
+
+}
