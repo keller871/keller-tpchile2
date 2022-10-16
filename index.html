@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pagina web interna para uso exclusivo de teleperformance Chile">
     <title>TP Chile</title>
     <!-- fuentes de google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,8 +25,9 @@
     <!-- hoja de estilos nueva -->
     <link rel="stylesheet" href="./css/style-salida.css">
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  </svg>
 </head>
 <body>
     <main>
@@ -34,16 +36,31 @@
             <nav class="container">
                 <div class="row AcomodarBarraSuperior">
                     <div class="col-2">
-                        <a href="./index.html"><img class="LogoSuperiorDerecho" src="./assets/images/Teleperformance-logo-barra.png" alt=""></a>
+                        <a href="./index.html"><img class="LogoSuperiorDerecho" src="./assets/images/Teleperformance-logo-barra.png" alt="Teleperformance Chile Logo 2022"></a>
                     </div>
                     <div class="col-10 AcomodarOpcionesBarraSuperior" >
                         <ul>
                             <div class="OpcionesBarraSuperior">
-                                <li class="OpcionesBarraSuperior__hijo"><a href="./pages/documentos.html" class="text-white">Documentos</a></li>
+                                <li class="OpcionesBarraSuperior__hijo bi bi-list"><a href="./pages/documentos.html" class="text-white">Documentos</a></li>
                                 <li class="OpcionesBarraSuperior__hijo"><a href="./pages/procedimientos.html" class="text-white">Procedimientos</a></li>
-                                <li class="OpcionesBarraSuperior__hijo"><a href="./pages/manuales.html" class="text-white">Manuales</a></li>
+                                <li class="OpcionesBarraSuperior__hijo" ><a href="./pages/manuales.html" class="text-white">Manuales</a></li>
                                 <li class="OpcionesBarraSuperior__hijo"><a href="./pages/informes.html" class="text-white">Informes</a></li>
                                 <li class="OpcionesBarraSuperior__hijo"><a href="./pages/contactos.html" class="text-white">Contactos</a></li>
+                                
+                                <label for="menu" class="nav_label">
+                                    <i class="fas fa-bars"></i>
+                                </label>
+                                <!-- el siguiente menu es el desplegable de la derecha, y solo se utiliza en el index -->
+                                <input type="checkbox" id="menu" class="nav_input">
+                                <div class="BotonesLateralesOcultos nav_menu">
+                                    <a href="../pages/novedades-anteriores.html"><button>Novedades Anteriores</button></a>  
+                                    <a href="../pages/informes.html"><button>Informes</button></a>
+                                    <a href="../pages/adp.html"><button>ADP</button></a>
+                                    <a href="../pages/redes-sociales.html"><button>Redes Sociales</button></a>
+                                    <a href="../pages/ayuda.html"><button>Ayuda</button></a>
+                                    <a href="../pages/datos-operacion.html"><button>Datos operacion</button></a>
+                                </div>
+                                </div>
                             </div>
                         </ul>
                     </div>
@@ -52,7 +69,7 @@
         </header>
         <h1 class="col-10 TituloPrincipal">Portal TP Chile</h1>
         <section class="container">
-            <div class="row">
+            <div class="row novedadesResponsive">
                 <div class="col-9 Novedades">
                     <div>
                         <!-- aca separo cada entrada nueva con DIV dentro de section para poder aplicarle estilos a toda la seccion -->
@@ -82,7 +99,7 @@
                     </div>
                     <div>
                         <h3>Escalas salariales al 15/08/2022</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam eum natus sunt dolorem soluta nobis similique pariatur ipsam, assumenda necessitatibus amet numquam facilis deserunt dicta dolor excepturi perferendis ipsa quo.</p>
+                        <p>En el dia de la fecha se acordo un aumento salarial del 10% a pagar en 2 meses, se vera reflejada la primer cuota en la mensual de Agosto.</p>
                     </div>
                 </div>
                 <div class="col-1">
@@ -93,11 +110,11 @@
                         <h4 class="TituloBarraLateral">Barra lateral</h4>
                         <div class="BotonesLaterales">
                             <a href="../pages/novedades-anteriores.html"><button>Novedades Anteriores</button></a>  
-                            <a href="../pages/novedades-anteriores.html"><button>Informes</button></a>
-                            <a href="../pages/novedades-anteriores.html"><button>ADP</button></a>
-                            <a href="../pages/novedades-anteriores.html"><button>Redes Sociales</button></a>
-                            <a href="../pages/novedades-anteriores.html"><button>Ayuda</button></a>
-                            <a href="../pages/novedades-anteriores.html"><button>Datos operacion</button></a>
+                            <a href="../pages/informes.html"><button>Informes</button></a>
+                            <a href="../pages/adp.html"><button>ADP</button></a>
+                            <a href="../pages/redes-sociales.html"><button>Redes Sociales</button></a>
+                            <a href="../pages/ayuda.html"><button>Ayuda</button></a>
+                            <a href="../pages/datos-operacion.html"><button>Datos operacion</button></a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +122,7 @@
         </section>
     </main>
     <div class="gif-footer">
-        <img src="../assets/images/tp-corazon.gif" alt="gif corazon" >
+        <img src="../assets/images/tp-corazon.gif" alt="animacion corazon" >
     </div>
     <footer>
         <!-- linea para separar -->

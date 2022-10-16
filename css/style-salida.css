@@ -4,9 +4,7 @@ nav {
   border-radius: 10px;
   margin: 5px;
   box-shadow: 10px 10px 5px rgba(19, 2, 66, 0.3);
-  /* display: flex;
-    position: fixed;
-    justify-content: center; */ }
+}
 
 .AcomodarBarraSuperior {
   display: flex;
@@ -26,9 +24,7 @@ nav {
     margin-top: 5px;
     margin-bottom: 3px; }
 
-.AcomodarOpcionesBarraSuperio {
-  margin: 30px;
-  padding: 30px; }
+
 
 .OpcionesBarraSuperior {
   color: white;
@@ -46,16 +42,20 @@ nav {
       text-decoration: none;
       text-decoration-line: none; }
 
+
+
 body {
   /* imagen de fondo */
   background-image: url(/assets/images/fondo-azul.jpg);
-  /* 100% o provar con cover */
   background-size: 100%; }
 
 h1 {
   font-family: 'Ultra', serif;
   color: white;
-  text-shadow: 2px  0px 0px black, 0px  2px 0px black, -2px  0px 0px black, 0px -2px 0px black; }
+  text-shadow: 2px  0px 0px black,
+ 0px  2px 0px black,
+ -2px  0px 0px black,
+ 0px -2px 0px black; }
 
 .TituloPrincipal {
   display: flex;
@@ -84,9 +84,66 @@ p {
   border: solid #eaeaf6 1px;
   margin-top: 40px; }
 
+.menuLateral{
+  margin-right: 220px;
+  cursor: copy;
+
+}
+
+.BotonesLateralesOcultos button{
+  background-color: #db0696;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  box-shadow: 10px 10px 5px rgba(19, 2, 66, 0.3);
+
+}
+
+.BotonesLateralesOcultos{
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  opacity: 90%;
+}
+
+.nav_input:checked + .nav_menu{
+  background: rgb(10, 7, 114);
+  right: 0;
+  top: 45px;
+  border-radius: 40px;
+}
+
+
+.nav_input{
+  display: none;
+}
+
+.nav_label{
+  display: none;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 991px) {
   .OpcionesBarraSuperior__hijo {
-    font-size: small; } }
+    font-size: small; 
+  }
+
+  .nav_label{
+    display: grid;
+    justify-items: right;
+  }
+
+  .BarraLateral{
+    display: none;
+  }
+  .novedadesResponsive{
+    display: grid;
+    justify-content: center;
+  }
+
+  }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .OpcionesBarraSuperior__hijo {
@@ -94,12 +151,13 @@ p {
   .AcomodarBarraSuperior {
     align-items: flex-start; }
   .gif-footer {
-    display: none; } }
+    display: none; }
+  }
 
 .Formulario {
   display: grid;
   justify-content: center;
-  background-color: rgba(234, 234, 246, 0.2);
+  background-color: rgba(14, 14, 75, 0.2);
   border-radius: 15px;
   box-shadow: 10px 10px 5px rgba(19, 2, 66, 0.3); }
 
@@ -143,13 +201,14 @@ p {
   color: white;
   font-weight: bold; }
 
-@keyframes TituloPrincipalAnimacion {
+  /* aqui esta una animacion del titulo, se mueve de derecha a izquierda, lo quite porque no es util, pero lo dejo comentado para quede registro de la animacion */
+/* @keyframes TituloPrincipalAnimacion {
   from {
-    margin-left: -10%;
+    margin-right: -10%;
     width: 300%; }
   to {
     margin-left: -100%;
-    width: 100%; } }
+    width: 100%; } } */
 
 .CuadroDeDescarga {
   display: grid;
@@ -176,7 +235,7 @@ p {
   text-shadow: 10px 10px 10px black; }
 
 .CuadroDeDescarga__Animacion:hover {
-  background-image: linear-gradient(to top, #b9b9b9, #282828);
+  background-image: linear-gradient(to top, #26069c, #1b0373);
   transform: translate(5px, 10px);
   color: white;
   box-shadow: -40px 10px 10px #012252; }

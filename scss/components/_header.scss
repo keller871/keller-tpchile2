@@ -4,10 +4,8 @@ nav{
     border-radius: 10px;
     margin: 5px;
     box-shadow: 10px 10px 5px rgba(19, 2, 66, 0.3);
-    /* display: flex;
-    position: fixed;
-    justify-content: center; */
 }
+
 .AcomodarBarraSuperior{
     display: flex;
     align-items: center;
@@ -31,10 +29,6 @@ nav{
 }
 
 
-.AcomodarOpcionesBarraSuperio{ 
-    margin: 30px;
-    padding: 30px;
-}
 
 .OpcionesBarraSuperior{
     color: white;
@@ -42,6 +36,7 @@ nav{
     align-items: center;
     justify-content: flex-end;
     font-size: x-large;
+    box-sizing: border-box;
 
     &__hijo{
         margin: 10px 10px 0px 10px;
@@ -58,4 +53,6 @@ nav{
         }
     }
 }
+
+
 
